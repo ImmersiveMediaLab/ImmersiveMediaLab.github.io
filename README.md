@@ -1,2 +1,5 @@
-# VR
-Yashar and Noah's VR Project
+## A project by Yashar and Noah
+#### Links:
+[1](/1/)
+
+[2](/2/)
