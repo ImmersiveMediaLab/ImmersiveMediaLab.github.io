@@ -154,7 +154,13 @@
 				controller2.userData.points = [ new THREE.Vector3(), new THREE.Vector3() ];
 				controller2.userData.matrices = [ new THREE.Matrix4(), new THREE.Matrix4() ];
 				scene.add( controller2 );
-
+				
+				var oLoader = new THREE.OBJLoader();
+				oLoader.setPath( '../models/' );
+				oLoader.load( 'scene1.obj', function ( object ) {
+					scene.add( object );
+				} );
+				
 				var loader = new THREE.OBJLoader();
 				loader.setPath( '../models/' );
 				loader.load( 'vr_controller_vive_1_5.obj', function ( object ) {
