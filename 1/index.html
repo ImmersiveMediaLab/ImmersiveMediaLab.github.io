@@ -155,9 +155,9 @@
 				controller2.userData.matrices = [ new THREE.Matrix4(), new THREE.Matrix4() ];
 				scene.add( controller2 );
 				
-				var objarray = [
 				
-				var oLoader = new THREE.OBJLoader();
+				
+				var oLoader0 = new THREE.OBJLoader();
 				oLoader.setPath( '../models/' );
 				oLoader.load( 'scene1.obj', function ( text1 ) {
 					text1.scale.x = 0.1;
@@ -167,9 +167,9 @@
 					text.1.position.y = 30;
 					
 					//scene.add( text1 );
-				} );,
+				} );
 				
-				var oLoader = new THREE.OBJLoader();
+				var oLoader1 = new THREE.OBJLoader();
 				oLoader.setPath( '../models/World1Option1/' );
 				oLoader.load( 'World1Option1.obj', function ( option1 ) {
 					option1.scale.x = 0.1;
@@ -178,9 +178,9 @@
 					option1.position.z = -50;
 					option1.position.y = -10
 					//scene.add( text1 );
-				} );,
+				} );
 				
-				var oLoader = new THREE.OBJLoader();
+				var oLoader2 = new THREE.OBJLoader();
 				oLoader.setPath( '../models/World1Terrain/' );
 				oLoader.load( 'tinker.obj', function ( world1 ) {
 					world1.scale.x = 0.1;
@@ -190,7 +190,7 @@
 					//scene.add( text1 );
 				} );
 					
-					]
+				var objarray = 
 				scene.add(objarray[0]);
 				scene.add(objarray[1]);
 				
