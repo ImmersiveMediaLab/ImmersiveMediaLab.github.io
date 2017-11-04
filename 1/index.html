@@ -158,10 +158,11 @@
 				var oLoader = new THREE.OBJLoader();
 				oLoader.setPath( '../models/World1Terrain/' );
 				oLoader.load( 'tinker.obj', function ( text1 ) {
-					//text1.scale.x = 0.05;
-					//text1.scale.y = 0.05;
-					//text1.scale.z = 0.05;
+					text1.scale.x = 0.1;
+					text1.scale.y = 0.1;
+					text1.scale.z = 0.1;
 					text1.position.z = -50;
+					text1.roation.x = 90;
 					scene.add( text1 );
 				} );
 				
