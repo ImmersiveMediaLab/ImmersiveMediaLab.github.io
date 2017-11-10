@@ -395,7 +395,7 @@
 
 			}
 */
-			/*
+			
 			function updateGeometry( start, end ) {
 
 				if ( start === end ) return;
@@ -419,7 +419,7 @@
 				attributes.color.needsUpdate = true;
 
 			}
-*/
+
 			function onWindowResize() {
 
 				camera.aspect = window.innerWidth / window.innerHeight;
@@ -452,13 +452,13 @@
 
 					point1.setFromMatrixPosition( matrix );
 					matrix1.lookAt( point2, point1, up );
-
+					/*
 					if ( controller.getButtonState( 'trigger' ) ) {
 
 						stroke( controller, point1, point2, matrix1, matrix2 );
 
 					}
-
+					*/
 					point2.copy( point1 );
 					matrix2.copy( matrix1 );
 
