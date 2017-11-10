@@ -77,7 +77,7 @@
 
 				camera = new THREE.PerspectiveCamera( 70, window.innerWidth / window.innerHeight, 0.01, 50 );
 				scene.add( camera );
-
+				/*
 				var geometry = new THREE.BoxGeometry( 0.5, 0.8, 0.5 );
 				var material = new THREE.MeshStandardMaterial( {
 					color: 0x444444,
@@ -90,7 +90,7 @@
 				table.castShadow = true;
 				table.receiveShadow = true;
 				scene.add( table );
-
+*/
 				/*
 				var table = new THREE.Mesh( geometry, material );
 				table.position.y = 0.35;
@@ -143,13 +143,13 @@
 
 				// controllers
 
-				controller1 = new THREE.PaintViveController( 0 );
+				controller1 = new THREE.ViveController( 0 );
 				controller1.standingMatrix = renderer.vr.getStandingMatrix();
 				controller1.userData.points = [ new THREE.Vector3(), new THREE.Vector3() ];
 				controller1.userData.matrices = [ new THREE.Matrix4(), new THREE.Matrix4() ];
 				scene.add( controller1 );
 
-				controller2 = new THREE.PaintViveController( 1 );
+				controller2 = new THREE.ViveController( 1 );
 				controller2.standingMatrix = renderer.vr.getStandingMatrix();
 				controller2.userData.points = [ new THREE.Vector3(), new THREE.Vector3() ];
 				controller2.userData.matrices = [ new THREE.Matrix4(), new THREE.Matrix4() ];
@@ -304,7 +304,7 @@
 
 				return array;
 			}
-
+			/*
 
 			function stroke( controller, point1, point2, matrix1, matrix2 ) {
 
@@ -394,7 +394,8 @@
 				geometry.drawRange.count = count;
 
 			}
-
+*/
+			/*
 			function updateGeometry( start, end ) {
 
 				if ( start === end ) return;
@@ -418,7 +419,7 @@
 				attributes.color.needsUpdate = true;
 
 			}
-
+*/
 			function onWindowResize() {
 
 				camera.aspect = window.innerWidth / window.innerHeight;
